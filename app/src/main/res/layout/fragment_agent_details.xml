@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".agentdetails.view.AgentDetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/agentImg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/agentImg"
+            tools:text="Agent's name" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@+id/nameTxt"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/blurbTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@+id/titleTxt"
+            tools:text="Blurb" />
+
+        <TextView
+            android:id="@+id/hpTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:paddingVertical="10dp"
+            android:paddingStart="30dp"
+            android:text="Health points [HP]"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/blurbTxt"
+            tools:layout_editor_absoluteX="-16dp" />
+
+        <TextView
+            android:id="@+id/hpValueTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:paddingVertical="10dp"
+            android:paddingStart="30dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@+id/hpTxt"
+            tools:text="HP value" />
+
+        <TextView
+            android:id="@+id/moveSpeedTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:paddingVertical="10dp"
+            android:paddingStart="30dp"
+            android:text="Move speed"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/hpValueTxt" />
+
+        <TextView
+            android:id="@+id/moveSpeedValueTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:paddingVertical="10dp"
+            android:paddingStart="30dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@+id/moveSpeedTxt"
+            tools:text="Move speed value" />
+
+        <TextView
+            android:id="@+id/statsTitleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:paddingVertical="10dp"
+            android:paddingStart="30dp"
+            android:text="Stats"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/moveSpeedValueTxt" />
+
+        <TextView
+            android:id="@+id/attackTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:paddingVertical="10dp"
+            app:layout_constraintStart_toStartOf="@+id/statsTitleTxt"
+            android:paddingStart="60dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@+id/statsTitleTxt"
+            tools:text="Attack" />
+
+        <TextView
+            android:id="@+id/defenceTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:paddingVertical="10dp"
+            android:paddingStart="60dp"
+            app:layout_constraintStart_toStartOf="@+id/attackTxt"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@+id/attackTxt"
+            tools:text="Defence" />
+
+        <TextView
+            android:id="@+id/magicTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:paddingVertical="10dp"
+            android:paddingStart="60dp"
+            app:layout_constraintStart_toStartOf="@+id/attackTxt"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@+id/defenceTxt"
+            tools:text="Magic" />
+
+        <TextView
+            android:id="@+id/difficultyTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:paddingVertical="10dp"
+            app:layout_constraintStart_toStartOf="@+id/attackTxt"
+            android:paddingStart="60dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@+id/magicTxt"
+            tools:text="Difficulty" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
